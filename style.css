@@ -2,14 +2,22 @@
 *{
     font-family: "Roboto Mono", monospace;
     margin: 0;padding: 0;box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
-html, body {
+html,body{
     max-width: 100%;
-    overflow-x: hidden;
-    background-color: white;
-  }
+}
+.main-navigation{
+    font-weight: normal;
+    transition: all 0.15s linear 0.15s;
+    text-shadow: none;
+    text-decoration: none;
+}
 .main-navigation:hover{
+    text-shadow: none;
     font-weight: bold;
+    transition: all 0.15s linear 0.15s;
 }
 
 html{
@@ -25,14 +33,15 @@ html{
     background-color: rgb(238, 20, 191);
 }
 
-li{
-    list-style: none;
+.card{
+    box-shadow: none;
+    transition:all 0.5s linear 0.10s;
 }
 
 .card:hover{
     cursor: pointer;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
-    transition: .4s ease-in-out;
+    transition:all 0.5s linear 0.10s;
 }
 
 .right_part ul{
@@ -48,21 +57,42 @@ li{
     transition: .8s ease-in-out;
 }
 .navigation{
+    padding: 10px 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: none;
+    box-shadow: none;
+    transition:all 0.5s linear 0.10s;
 
-    padding:5px 10px;
+}
+.navigation:hover{
+    padding: 10px 10px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    transition:all 0.5s linear 0.10s;
 
 }
 
 .footer-social-icon{
-    padding: 8px 5px;
+    padding: 10px 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: none;
+    box-shadow:none;
+    transition:all 0.5s linear 0.10s;
+}
+.footer-social-icon:hover{
+    padding: 10px 10px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    transition:all 0.5s linear 0.10s;
+}
 
-
+.my-skills,.about-me{
+    display: flex;
+    flex-direction: row-reverse;
 }
